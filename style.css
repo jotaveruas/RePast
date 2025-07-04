@@ -109,3 +109,100 @@ nav a:hover {
 .signup {
   text-align: center;
 }
+
+/*Definicoes extras para a tarefa (uma vez que meu site nao usa)*/
+
+/*Caixa com opacidade e sombra*/
+.shadow-box {
+  width: 300px;
+  margin: 40px auto;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.08);
+  box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.6);
+  border-radius: 12px;
+  text-align: center;
+  font-size: 18px;
+  animation: bounce 1s ease-in-out infinite alternate;
+}
+
+/*Animacao da caixa*/
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-12px);
+  }
+}
+
+/*Adaptibilidade para o celular (util)*/
+@media (max-width: 768px) {
+
+  body {
+    font-size: 16px;
+    padding: 0 10px;
+  }
+
+  .caixa {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center;
+  }
+
+  .logo {
+    width: 50%;
+    height: auto;
+    padding-left: 0;
+  }
+
+  nav {
+    position: static;
+    text-align: center;
+    margin-top: 10px;
+  }
+
+  nav li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav a {
+    font-size: 20px;
+  }
+
+  .principal {
+    padding: 15px;
+    font-size: 18px;
+  }
+
+  .itens {
+    font-size: 18px;
+  }
+
+  .tuning {
+    padding: 15px;
+  }
+
+  .tuning a {
+    font-size: 22px;
+    padding: 8px;
+  }
+
+  .signup {
+    padding: 15px;
+  }
+
+  input[type="text"],
+  input[type="email"],
+  input[type="password"],
+  input[type="submit"] {
+    width: 100%;
+    max-width: 280px;
+    box-sizing: border-box;
+  }
+
+  .shadow-box {
+    width: 90%;
+  }
+
+}
